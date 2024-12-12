@@ -19,5 +19,7 @@ https://www.aggsoft.com/serial-port-monitor.htm using it in spy mode, selecting 
  "I am using a serial port monitor to send visca commands over usb to a camera, the hex is as follows __Hex here__ I need the Visca command from this._"
  it will give you the visca command :), you can whatever the command is to the code, I don't want to add more as I dont need anymore functionality.
 
+After that add the g code macros and CHANGE THE PATH to the python file in gcode shell commands.
+
 Put the g code macros into the printer config file and then add the gcode shell command(two seperate commands). They can also be found in the code. Please enjoy this
 and make it better if you want.
