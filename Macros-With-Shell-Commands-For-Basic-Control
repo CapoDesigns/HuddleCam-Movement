@@ -1,35 +1,35 @@
 [gcode_shell_command Camera_Right]
-command: python3 /home/user/Downloads/test1.py move_camera_right
+command: python3 YOURPATH/MainCameraControl.py move_camera_right #CHANGE YOURPATH to the path the py file is in
 timeout: 10.0
 verbose: False #change this to true if you want an output, I would turn this on if it is not working for feedback. Check console.
 
 [gcode_shell_command Camera_Left]
-command: python3 /home/user/Downloads/test1.py move_camera_left
+command: python3 YOURPATH/MainCameraControl.py move_camera_left
 timeout: 10.0
 verbose: False
 
 [gcode_shell_command Camera_Up]
-command: python3 /home/user/Downloads/test1.py move_camera_up
+command: python3 YOURPATH/MainCameraControl.py move_camera_up
 timeout: 10.0
 verbose: False
 
 [gcode_shell_command Camera_Down]
-command: python3 /home/user/Downloads/test1.py move_camera_down
+command: python3 YOURPATH/MainCameraControl.py move_camera_down
 timeout: 10.0
 verbose: False
 
 [gcode_shell_command Zoom_In]
-command: python3 /home/user/Downloads/test1.py zoom_in
+command: python3 YOURPATH/MainCameraControl.py zoom_in
 timeout: 10.0
 verbose: False
 
 [gcode_shell_command Zoom_Out]
-command: python3 /home/user/Downloads/test1.py zoom_out
+command: python3 YOURPATH/MainCameraControl.py zoom_out
 timeout: 10.0
 verbose: False
 
 [gcode_shell_command RESET_CAMERA]
-command: python3 /home/user/Downloads/test1.py home_camera
+command: python3 YOURPATH/MainCameraControl.py home_camera
 timeout: 10.0
 verbose: False
 
