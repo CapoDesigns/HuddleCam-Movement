@@ -1,0 +1,64 @@
+[gcode_shell_command Camera_Right]
+command: python3 /home/user/Downloads/test1.py move_camera_right
+timeout: 10.0
+verbose: False #change this to true if you want an output, I would turn this on if it is not working for feedback. Check console.
+
+[gcode_shell_command Camera_Left]
+command: python3 /home/user/Downloads/test1.py move_camera_left
+timeout: 10.0
+verbose: False
+
+[gcode_shell_command Camera_Up]
+command: python3 /home/user/Downloads/test1.py move_camera_up
+timeout: 10.0
+verbose: False
+
+[gcode_shell_command Camera_Down]
+command: python3 /home/user/Downloads/test1.py move_camera_down
+timeout: 10.0
+verbose: False
+
+[gcode_shell_command Zoom_In]
+command: python3 /home/user/Downloads/test1.py zoom_in
+timeout: 10.0
+verbose: False
+
+[gcode_shell_command Zoom_Out]
+command: python3 /home/user/Downloads/test1.py zoom_out
+timeout: 10.0
+verbose: False
+
+[gcode_shell_command RESET_CAMERA]
+command: python3 /home/user/Downloads/test1.py home_camera
+timeout: 10.0
+verbose: False
+
+
+[gcode_macro Camera_Right]
+gcode:
+    RUN_SHELL_COMMAND CMD=Camera_Right
+    
+[gcode_macro Camera_Left]
+gcode:
+    RUN_SHELL_COMMAND CMD=Camera_Left
+
+[gcode_macro Camera_Up]
+gcode:
+    RUN_SHELL_COMMAND CMD=Camera_Up
+
+[gcode_macro Camera_Down]
+gcode:
+    RUN_SHELL_COMMAND CMD=Camera_Down
+
+[gcode_macro zoom_in]
+gcode:
+    RUN_SHELL_COMMAND CMD=Zoom_In
+
+[gcode_macro zoom_out]
+gcode:
+    RUN_SHELL_COMMAND CMD=Zoom_Out
+
+[gcode_macro Reset_Camera]
+gcode:
+    RUN_SHELL_COMMAND CMD=RESET_CAMERA
+    
